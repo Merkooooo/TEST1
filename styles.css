@@ -1304,15 +1304,17 @@ textarea,
 select {
     width: 100%;
     padding: 16px 20px;
-    background: var(--bg-card);
+    background-color: #121928 !important;
+    /* Force dark background */
     border: 1px solid var(--border-light);
     border-radius: var(--radius-sm);
-    color: white;
+    color: white !important;
     font-family: var(--font-body);
     font-size: 1rem;
     transition: var(--transition);
     outline: none;
     appearance: none;
+    -webkit-appearance: none;
 }
 
 input:focus,
@@ -1369,43 +1371,45 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    /* Increased space */
     flex-wrap: wrap;
 }
 
 .filter-btn {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-card-solid);
     border: 1px solid var(--border-light);
-    padding: 12px 28px;
+    padding: 14px 32px;
     border-radius: var(--radius-full);
     color: var(--text-secondary);
     cursor: pointer;
     transition: var(--transition);
     font-weight: 600;
-    font-family: var(--font-body);
     font-size: 1rem;
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Added shadow */
 }
 
 .filter-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--bg-card);
     color: white;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    border-color: var(--cyan);
 }
 
 .filter-btn.active {
-    background: var(--cyan-dim);
-    color: var(--cyan);
-    border-color: var(--cyan);
-    box-shadow: 0 0 20px rgba(11, 197, 234, 0.2);
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(11, 197, 234, 0.3);
 }
 
 /* ----- 19. FAQ Section ----- */
 .faq-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 80px;
+    /* Increased from 40px */
 }
 
 .faq-card {
@@ -1486,15 +1490,17 @@ input[type="checkbox"] {
 
 /* Services Detail */
 .services-detail {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .service-detail-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 100px;
+    /* Increased gap */
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 160px;
+    /* Increased separation */
 }
 
 .service-detail-section.reverse {
@@ -1505,6 +1511,25 @@ input[type="checkbox"] {
 .service-detail-section.reverse .service-detail-text {
     direction: ltr;
     /* Reset text direction */
+}
+
+/* Spacing fixes for Service Text */
+.service-detail-text h2 {
+    margin-bottom: 24px;
+    font-size: 2.5rem;
+}
+
+.service-detail-text p.lead {
+    margin-bottom: 40px;
+    line-height: 1.9;
+    font-size: 1.2rem;
+}
+
+.service-detail-text h3 {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .service-visual {
@@ -1536,8 +1561,8 @@ input[type="checkbox"] {
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin: 24px 0;
+    gap: 16px;
+    margin: 24px 0 40px;
 }
 
 .tech-tag {
@@ -1551,14 +1576,18 @@ input[type="checkbox"] {
 
 .feature-check-list {
     list-style: none;
-    margin: 24px 0 32px;
+    margin: 24px 0 48px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .feature-check-list li {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    /* Explicit spacing */
     font-size: 1.05rem;
     color: var(--text-secondary);
 }
