@@ -7,28 +7,34 @@
     <meta name="description"
         content="Vodilno slovensko podjetje za digitalne rešitve — spletne aplikacije, mobilne aplikacije, UI/UX dizajn">
     <title>VašePodjetje — Digitalne Rešitve</title>
+
+    <!-- Google Fonts - Syne & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div id="cursor-dot"></div>
-    <div id="cursor-ring"></div>
+    <!-- Page Transition Overlay -->
     <div id="page-transition"></div>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
                 <span class="logo-icon"><i class="fas fa-bolt"></i></span>
                 <span class="logo-text">VašePodjetje</span>
             </a>
-            <ul class="nav-links" id="navLinks">
+            <ul class="nav-links">
                 <li><a href="index.html" class="active">Domov</a></li>
                 <li><a href="about.html">O nas</a></li>
                 <li><a href="services.html">Storitve</a></li>
@@ -38,96 +44,98 @@
             <div class="nav-actions">
                 <a href="contact.html" class="nav-cta">Brezplačen posvet</a>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Meni">
-                    <span></span><span></span><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
     </nav>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <canvas id="hero-canvas"></canvas>
+            <div class="hero-bg-pattern"></div>
             <div class="container">
-                <div class="hero-inner">
-                    <div class="hero-text">
-                        <div class="hero-eyebrow">
-                            <span class="eyebrow-dot"></span>
-                            Inovativne Digitalne Rešitve
-                        </div>
+                <div class="hero-grid">
+                    <div class="hero-content reveal">
+                        <span class="hero-tagline">Inovativne digitalne rešitve</span>
                         <h1 class="hero-title">
-                            Pretvorimo vaše<br>
-                            <span class="gradient-text">vizije</span><br>
+                            Pretvorimo vaše <br>
+                            <span class="gradient-text">vizije</span> <br>
                             v resničnost
                         </h1>
-                        <p class="hero-subtitle">
+                        <p class="hero-description">
                             Smo vodilno slovensko podjetje za razvoj spletnih aplikacij,
                             mobilnih rešitev in digitalnih produktov. Pomagamo podjetjem
                             rasti v digitalnem svetu.
                         </p>
                         <div class="hero-buttons">
-                            <a href="contact.html" class="btn btn-primary btn-large">
-                                Začnimo skupaj <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                            <a href="contact.html" class="btn btn-primary">
+                                Začnimo skupaj <i class="fas fa-arrow-right btn-icon"></i>
                             </a>
-                            <a href="projects.html" class="btn btn-outline btn-large">
+                            <a href="projects.html" class="btn btn-outline">
                                 Oglejte si projekte
                             </a>
                         </div>
                         <div class="hero-stats">
-                            <div class="hero-stat">
-                                <div class="hero-stat-num">150+</div>
-                                <div class="hero-stat-label">Strank</div>
+                            <div class="stat-item">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-label">Strank</span>
                             </div>
-                            <div class="hero-stat">
-                                <div class="hero-stat-num">300+</div>
-                                <div class="hero-stat-label">Projektov</div>
+                            <div class="stat-item">
+                                <span class="stat-number">300+</span>
+                                <span class="stat-label">Projektov</span>
                             </div>
-                            <div class="hero-stat">
-                                <div class="hero-stat-num">10+</div>
-                                <div class="hero-stat-label">Let izkušenj</div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Let izkušenj</span>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-visual">
-                        <div class="hero-card-stack">
-                            <div class="hcard hcard-main">
-                                <div>
-                                    <div class="hcard-label">Rast prometa</div>
-                                    <div class="hcard-value">+347%</div>
-                                    <div class="hcard-metric">↑ v zadnjih 12 mesecih</div>
+
+                    <!-- Visual Cards (Hero Right) -->
+                    <div class="hero-visual reveal reveal-delay-2">
+                        <div class="card-stack">
+                            <div class="card card-large">
+                                <div class="card-header">
+                                    <span class="card-label">Rast prometa</span>
+                                    <span class="card-value">+347%</span>
                                 </div>
-                                <div class="hcard-chart">
-                                    <div class="hbar"></div>
-                                    <div class="hbar"></div>
-                                    <div class="hbar"></div>
-                                    <div class="hbar"></div>
-                                    <div class="hbar"></div>
-                                    <div class="hbar"></div>
-                                    <div class="hbar"></div>
-                                </div>
-                            </div>
-                            <div class="hcard hcard-float-1">
-                                <div class="hcard-projects">
-                                    <div class="hproject-row">
-                                        <span class="hproject-dot dot-cyan"></span>
-                                        <span class="hproject-name">E-commerce</span>
-                                        <span class="hproject-status">Live</span>
-                                    </div>
-                                    <div class="hproject-row">
-                                        <span class="hproject-dot dot-violet"></span>
-                                        <span class="hproject-name">FitLife App</span>
-                                        <span class="hproject-status status-progress">Dev</span>
-                                    </div>
-                                    <div class="hproject-row">
-                                        <span class="hproject-dot dot-gold"></span>
-                                        <span class="hproject-name">ERP Sistem</span>
-                                        <span class="hproject-status status-review">Review</span>
-                                    </div>
+                                <div class="card-metric">↑ v zadnjih 12 mesecih</div>
+                                <div class="card-chart">
+                                    <span class="chart-bar" style="height: 40%;"></span>
+                                    <span class="chart-bar" style="height: 65%;"></span>
+                                    <span class="chart-bar" style="height: 45%;"></span>
+                                    <span class="chart-bar" style="height: 80%;"></span>
+                                    <span class="chart-bar" style="height: 60%;"></span>
+                                    <span class="chart-bar" style="height: 90%;"></span>
+                                    <span class="chart-bar" style="height: 75%;"></span>
                                 </div>
                             </div>
-                            <div class="hcard hcard-float-2">
-                                <div class="hcard-label">Zadovoljstvo strank</div>
-                                <div class="hcard-value">98.4%</div>
-                                <div class="hcard-metric">⭐ 5.0 povprečna ocena</div>
+                            <div class="card card-float-1">
+                                <div class="project-list">
+                                    <div class="project-item">
+                                        <span class="project-dot dot-cyan"></span>
+                                        <span class="project-name">E-commerce</span>
+                                        <span class="project-status status-live">Live</span>
+                                    </div>
+                                    <div class="project-item">
+                                        <span class="project-dot dot-violet"></span>
+                                        <span class="project-name">FitLife App</span>
+                                        <span class="project-status status-progress">Dev</span>
+                                    </div>
+                                    <div class="project-item">
+                                        <span class="project-dot dot-gold"></span>
+                                        <span class="project-name">ERP Sistem</span>
+                                        <span class="project-status status-review">Review</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-float-2">
+                                <span class="card-label">Zadovoljstvo strank</span>
+                                <span class="card-value">98.4%</span>
+                                <span class="card-rating">⭐ 5.0 povprečna ocena</span>
                             </div>
                         </div>
                     </div>
@@ -135,157 +143,172 @@
             </div>
         </section>
 
-        <section class="trusted">
+        <!-- Trusted By Section -->
+        <section class="trusted-by">
             <div class="container">
-                <div class="trusted-inner">
+                <div class="trusted-grid">
                     <span class="trusted-label">Zaupajo nam</span>
                     <div class="trusted-logos">
-                        <span class="trusted-logo">TechStart</span>
-                        <span class="trusted-logo">ModnaHiša</span>
-                        <span class="trusted-logo">Logistika+</span>
-                        <span class="trusted-logo">GreenEnergy</span>
-                        <span class="trusted-logo">DataCore</span>
-                        <span class="trusted-logo">FinTech SI</span>
+                        <span class="logo-item">TechStart</span>
+                        <span class="logo-item">ModnaHiša</span>
+                        <span class="logo-item">Logistika+</span>
+                        <span class="logo-item">GreenEnergy</span>
+                        <span class="logo-item">DataCore</span>
+                        <span class="logo-item">FinTech SI</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="services-preview">
+        <!-- Services Preview -->
+        <section class="services">
             <div class="container">
                 <div class="section-header reveal">
                     <span class="badge">Naše storitve</span>
-                    <h2>Celovite digitalne<br>rešitve za vaše podjetje</h2>
+                    <h2>Celovite digitalne <br> rešitve za vaše podjetje</h2>
                     <p>Od ideje do lansiranja — pokrijemo vsak korak digitalne transformacije</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card reveal reveal-delay-1">
-                        <div class="service-icon-wrap"><i class="fas fa-globe"></i></div>
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
                         <h3>Spletne aplikacije</h3>
-                        <p>Moderne, skalabilne spletne aplikacije z vrhunsko uporabniško izkušnjo in blesketajočim
-                            performansom.</p>
-                        <a href="services.html#web" class="service-link">Izvedite več <span><i
-                                    class="fas fa-arrow-right"></i></span></a>
+                        <p>Moderne, skalabilne spletne aplikacije z vrhunsko uporabniško izkušnjo.</p>
+                        <a href="services.html#web" class="service-link">Izvedite več <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card reveal reveal-delay-2">
-                        <div class="service-icon-wrap"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
                         <h3>Mobilne aplikacije</h3>
-                        <p>Native in cross-platform mobilne aplikacije za iOS in Android, ki delujejo brezhibno in
-                            hitro.
-                        </p>
-                        <a href="services.html#mobile" class="service-link">Izvedite več <span><i
-                                    class="fas fa-arrow-right"></i></span></a>
+                        <p>Native in cross-platform mobilne aplikacije za iOS in Android.</p>
+                        <a href="services.html#mobile" class="service-link">Izvedite več <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card reveal reveal-delay-3">
-                        <div class="service-icon-wrap"><i class="fas fa-palette"></i></div>
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
                         <h3>UI/UX Oblikovanje</h3>
-                        <p>Privlačen in funkcionalen dizajn, ki navdušuje uporabnike in povečuje konverzije.</p>
-                        <a href="services.html#design" class="service-link">Izvedite več <span><i
-                                    class="fas fa-arrow-right"></i></span></a>
+                        <p>Privlačen in funkcionalen dizajn, ki navdušuje uporabnike.</p>
+                        <a href="services.html#design" class="service-link">Izvedite več <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card reveal reveal-delay-1">
-                        <div class="service-icon-wrap"><i class="fas fa-cloud"></i></div>
+                        <div class="service-icon"><i class="fas fa-cloud"></i></div>
                         <h3>Cloud rešitve</h3>
                         <p>Varno in skalabilno gostovanje vaših aplikacij z 99.9% uptime garancijo.</p>
-                        <a href="services.html#cloud" class="service-link">Izvedite več <span><i
-                                    class="fas fa-arrow-right"></i></span></a>
+                        <a href="services.html#cloud" class="service-link">Izvedite več <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card reveal reveal-delay-2">
-                        <div class="service-icon-wrap"><i class="fas fa-robot"></i></div>
+                        <div class="service-icon"><i class="fas fa-robot"></i></div>
                         <h3>AI & Avtomatizacija</h3>
-                        <p>Inteligentne rešitve za avtomatizacijo poslovnih procesov, ki varčujejo čas in denar.</p>
-                        <a href="services.html#ai" class="service-link">Izvedite več <span><i
-                                    class="fas fa-arrow-right"></i></span></a>
+                        <p>Inteligentne rešitve za avtomatizacijo poslovnih procesov.</p>
+                        <a href="services.html#ai" class="service-link">Izvedite več <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card reveal reveal-delay-3">
-                        <div class="service-icon-wrap"><i class="fas fa-lock"></i></div>
+                        <div class="service-icon"><i class="fas fa-lock"></i></div>
                         <h3>Kibernetska varnost</h3>
-                        <p>Zaščitite svoje poslovanje z naprednimi varnostnimi rešitvami in revizijami.</p>
-                        <a href="services.html#security" class="service-link">Izvedite več <span><i
-                                    class="fas fa-arrow-right"></i></span></a>
+                        <p>Zaščitite svoje poslovanje z naprednimi varnostnimi rešitvami.</p>
+                        <a href="services.html#security" class="service-link">Izvedite več <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Why Us Section -->
         <section class="why-us">
             <div class="container">
-                <div class="why-us-inner">
-                    <div class="why-us-text reveal">
+                <div class="why-us-grid">
+                    <div class="why-us-content reveal">
                         <span class="badge badge-violet">Zakaj mi?</span>
                         <h2>Vaš partner za digitalno transformacijo</h2>
                         <p>S kombinacijo tehnične odličnosti, kreativnosti in poslovnega razumevanja vam pomagamo doseči
-                            in
-                            preseči vaše cilje.</p>
-                        <div class="feature-list">
+                            in preseči vaše cilje.</p>
+
+                        <div class="features-list">
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <div>
+                                <div class="feature-text">
                                     <h4>Izkušena ekipa</h4>
                                     <p>30+ certificiranih strokovnjakov z več kot 10 leti izkušenj</p>
                                 </div>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <div>
+                                <div class="feature-text">
                                     <h4>Preverjene tehnologije</h4>
                                     <p>Gradimo na najsodobnejšem in najzanesljivejšem stacku</p>
                                 </div>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <div>
+                                <div class="feature-text">
                                     <h4>Podpora 24/7</h4>
                                     <p>Vedno vam stojimo ob strani — pred, med in po projektu</p>
                                 </div>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <div>
+                                <div class="feature-text">
                                     <h4>Konkurenčne cene</h4>
                                     <p>Vrhunska kakovost po dostopnih cenah, brez presenečenj</p>
                                 </div>
                             </div>
                         </div>
-                        <a href="about.html" class="btn btn-primary">Spoznajte nas <span class="btn-icon"><i
-                                    class="fas fa-arrow-right"></i></span></a>
+
+                        <a href="about.html" class="btn btn-primary">Spoznajte nas <i
+                                class="fas fa-arrow-right btn-icon"></i></a>
                     </div>
+
                     <div class="why-us-visual reveal reveal-delay-2">
-                        <div class="visual-main-card">
-                            <div>
-                                <div class="vcard-title">Pregled uspešnosti</div>
-                                <div class="vcard-sub">Zadnjih 30 dni</div>
+                        <div class="performance-card">
+                            <div class="card-header">
+                                <h4>Pregled uspešnosti</h4>
+                                <span class="card-subtitle">Zadnjih 30 dni</span>
                             </div>
-                            <div class="vcard-stats-grid">
-                                <div class="vcard-stat">
-                                    <div class="vcard-num">+52%</div>
-                                    <div class="vcard-lbl">Rast prometa</div>
+
+                            <div class="stats-mini-grid">
+                                <div class="mini-stat">
+                                    <span class="mini-stat-value">+52%</span>
+                                    <span class="mini-stat-label">Rast prometa</span>
                                 </div>
-                                <div class="vcard-stat">
-                                    <div class="vcard-num">98%</div>
-                                    <div class="vcard-lbl">Uptime</div>
+                                <div class="mini-stat">
+                                    <span class="mini-stat-value">98%</span>
+                                    <span class="mini-stat-label">Uptime</span>
                                 </div>
-                                <div class="vcard-stat">
-                                    <div class="vcard-num">0.8s</div>
-                                    <div class="vcard-lbl">Čas nalaganja</div>
+                                <div class="mini-stat">
+                                    <span class="mini-stat-value">0.8s</span>
+                                    <span class="mini-stat-label">Čas nalaganja</span>
                                 </div>
-                                <div class="vcard-stat">
-                                    <div class="vcard-num">4.9★</div>
-                                    <div class="vcard-lbl">Ocena strank</div>
+                                <div class="mini-stat">
+                                    <span class="mini-stat-value">4.9★</span>
+                                    <span class="mini-stat-label">Ocena strank</span>
                                 </div>
                             </div>
-                            <div class="vcard-progress">
-                                <div class="vcard-progress-row"><span>Zadovoljstvo</span><span>96%</span></div>
-                                <div class="prog-bar">
-                                    <div class="prog-fill" style="width:0%" data-width="96%"></div>
+
+                            <div class="progress-bars">
+                                <div class="progress-item">
+                                    <span>Zadovoljstvo</span>
+                                    <span class="progress-value">96%</span>
                                 </div>
-                                <div class="vcard-progress-row"><span>Pravočasnost</span><span>92%</span></div>
-                                <div class="prog-bar">
-                                    <div class="prog-fill gold" style="width:0%" data-width="92%"></div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-fill" style="width: 96%;"></div>
                                 </div>
-                                <div class="vcard-progress-row"><span>Kakovost kode</span><span>98%</span></div>
-                                <div class="prog-bar">
-                                    <div class="prog-fill emerald" style="width:0%" data-width="98%"></div>
+
+                                <div class="progress-item">
+                                    <span>Pravočasnost</span>
+                                    <span class="progress-value">92%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-fill" style="width: 92%;"></div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span>Kakovost kode</span>
+                                    <span class="progress-value">98%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-fill" style="width: 98%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -294,21 +317,22 @@
             </div>
         </section>
 
-        <section class="projects-preview">
+        <!-- Projects Preview -->
+        <section class="projects">
             <div class="container">
                 <div class="section-header reveal">
                     <span class="badge badge-gold">Naši projekti</span>
-                    <h2>Nedavni uspešni<br>projekti</h2>
+                    <h2>Nedavni uspešni <br> projekti</h2>
                     <p>Oglejte si izbor naših najnovejših del in referenc</p>
                 </div>
                 <div class="projects-grid-home">
                     <div class="project-card reveal reveal-delay-1">
                         <div class="project-thumb"><i class="fas fa-shopping-cart"></i></div>
                         <div class="project-body">
-                            <div class="project-cat">Spletna aplikacija</div>
+                            <div class="project-category">Spletna aplikacija</div>
                             <h3>E-trgovina ModnaHiša</h3>
-                            <p>Celostna e-commerce platforma z integracijo plačil in naprednimi analitičnimi orodji.</p>
-                            <div class="tag-row">
+                            <p>Celostna e-commerce platforma z integracijo plačil in analitiko.</p>
+                            <div class="project-tags">
                                 <span class="tag">React</span>
                                 <span class="tag">Node.js</span>
                                 <span class="tag">PostgreSQL</span>
@@ -318,10 +342,10 @@
                     <div class="project-card reveal reveal-delay-2">
                         <div class="project-thumb"><i class="fas fa-dumbbell"></i></div>
                         <div class="project-body">
-                            <div class="project-cat">Mobilna aplikacija</div>
+                            <div class="project-category">Mobilna aplikacija</div>
                             <h3>FitLife App</h3>
                             <p>Cross-platform fitnes aplikacija z AI asistentom in personaliziranimi treningi.</p>
-                            <div class="tag-row">
+                            <div class="project-tags">
                                 <span class="tag">React Native</span>
                                 <span class="tag">Firebase</span>
                                 <span class="tag">AI/ML</span>
@@ -331,10 +355,10 @@
                     <div class="project-card reveal reveal-delay-3">
                         <div class="project-thumb"><i class="fas fa-industry"></i></div>
                         <div class="project-body">
-                            <div class="project-cat">Enterprise</div>
+                            <div class="project-category">Enterprise</div>
                             <h3>ERP Sistem</h3>
                             <p>Celostna ERP rešitev za upravljanje proizvodnje, skladišča in kadrov.</p>
-                            <div class="tag-row">
+                            <div class="project-tags">
                                 <span class="tag">Vue.js</span>
                                 <span class="tag">Python</span>
                                 <span class="tag">Docker</span>
@@ -343,12 +367,13 @@
                     </div>
                 </div>
                 <div class="text-center mt-3 reveal">
-                    <a href="projects.html" class="btn btn-outline btn-large">Vsi projekti <span class="btn-icon"><i
-                                class="fas fa-arrow-right"></i></span></a>
+                    <a href="projects.html" class="btn btn-outline">Vsi projekti <i
+                            class="fas fa-arrow-right btn-icon"></i></a>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials -->
         <section class="testimonials">
             <div class="container">
                 <div class="section-header center reveal">
@@ -358,16 +383,14 @@
                 <div class="testimonials-grid">
                     <div class="testimonial-card reveal reveal-delay-1">
                         <div class="stars">
-                            <span class="star"><i class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="testimonial-text">"Ekipa je presegla vsa naša pričakovanja. Projekt je bil dostavljen
-                            pravočasno in v okviru proračuna. Izjemna izkušnja od začetka do konca!"</p>
+                            pravočasno in v okviru proračuna."</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">JN</div>
-                            <div>
+                            <div class="author-info">
                                 <div class="author-name">Janez Novak</div>
                                 <div class="author-role">CEO, TechStart d.o.o.</div>
                             </div>
@@ -375,16 +398,14 @@
                     </div>
                     <div class="testimonial-card reveal reveal-delay-2">
                         <div class="stars">
-                            <span class="star"><i class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="testimonial-text">"Profesionalnost in strokovnost na najvišji ravni. Naša nova spletna
-                            aplikacija je povečala naš promet za 300% v prvih treh mesecih."</p>
+                            aplikacija je povečala promet za 300%."</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">AK</div>
-                            <div>
+                            <div class="author-info">
                                 <div class="author-name">Ana Kovač</div>
                                 <div class="author-role">Direktorica, ModnaHiša</div>
                             </div>
@@ -392,17 +413,14 @@
                     </div>
                     <div class="testimonial-card reveal reveal-delay-3">
                         <div class="stars">
-                            <span class="star"><i class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i
-                                    class="fas fa-star"></i></span><span class="star"><i class="fas fa-star"></i></span>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="testimonial-text">"Odlična komunikacija in podpora tudi po zaključku projekta.
-                            Partnerstvo
-                            z njimi je bila najboljša naložba tega leta."</p>
+                            Partnerstvo z njimi je bila najboljša naložba."</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">MH</div>
-                            <div>
+                            <div class="author-info">
                                 <div class="author-name">Marko Horvat</div>
                                 <div class="author-role">IT Manager, Logistika Plus</div>
                             </div>
@@ -412,16 +430,17 @@
             </div>
         </section>
 
-        <section class="cta-section">
+        <!-- CTA -->
+        <section class="cta">
             <div class="container">
                 <div class="cta-card reveal">
                     <span class="badge">Začnimo</span>
-                    <h2>Pripravljeni na<br><span class="gradient-text">digitalno transformacijo?</span></h2>
+                    <h2>Pripravljeni na <br><span class="gradient-text">digitalno transformacijo?</span></h2>
                     <p>Stopite v stik z nami in skupaj ustvarimo digitalni produkt, ki bo vaše podjetje popeljal naprej.
                     </p>
                     <div class="cta-buttons">
-                        <a href="contact.html" class="btn btn-primary btn-large">Kontaktirajte nas <span
-                                class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
+                        <a href="contact.html" class="btn btn-primary btn-large">Kontaktirajte nas <i
+                                class="fas fa-arrow-right btn-icon"></i></a>
                         <a href="services.html" class="btn btn-outline btn-large">Pregled storitev</a>
                     </div>
                 </div>
@@ -429,11 +448,12 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo-wrap">
+                    <div class="footer-logo">
                         <a href="index.html" class="logo">
                             <span class="logo-icon"><i class="fas fa-bolt"></i></span>
                             <span class="logo-text">VašePodjetje</span>
@@ -468,15 +488,18 @@
                 </div>
                 <div class="footer-col">
                     <h4>Kontakt</h4>
-                    <div class="footer-contact-item">📍 Ljubljana, Slovenija</div>
-                    <div class="footer-contact-item">📞 +386 1 234 5678</div>
-                    <div class="footer-contact-item">✉️ info@vasepodjetje.si</div>
-                    <div class="footer-contact-item">🕐 Pon–Pet: 9:00–17:00</div>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> Ljubljana, Slovenija</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+38612345678">+386 1 234 5678</a></p>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:info@vasepodjetje.si">info@vasepodjetje.si</a></p>
+                        <p><i class="fas fa-clock"></i> Pon–Pet: 9:00–17:00</p>
+                    </address>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 VašePodjetje. Vse pravice pridržane. · <a href="#">Zasebnost</a> · <a href="#">Pogoji</a></p>
-                <p>Gostovanje na GitHub Pages 🌐</p>
+                <p>© 2026 VašePodjetje. Vse pravice pridržane.</p>
+                <p><a href="#">Zasebnost</a> · <a href="#">Pogoji</a> · Gostovanje na GitHub Pages 🌐</p>
             </div>
         </div>
     </footer>

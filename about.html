@@ -8,26 +8,35 @@
     <title>O nas — VašePodjetje</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts - Syne & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <div id="cursor-dot"></div>
     <div id="cursor-ring"></div>
+    <!-- Page Transition Overlay -->
     <div id="page-transition"></div>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <span class="logo-icon">⚡</span>
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
                 <span class="logo-text">VašePodjetje</span>
             </a>
-            <ul class="nav-links" id="navLinks">
+            <ul class="nav-links">
                 <li><a href="index.html">Domov</a></li>
                 <li><a href="about.html" class="active">O nas</a></li>
                 <li><a href="services.html">Storitve</a></li>
@@ -37,7 +46,9 @@
             <div class="nav-actions">
                 <a href="contact.html" class="nav-cta">Brezplačen posvet</a>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Meni">
-                    <span></span><span></span><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
@@ -195,7 +206,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo-wrap">
+                    <div class="footer-logo">
                         <a href="index.html" class="logo">
                             <span class="logo-icon"><i class="fas fa-bolt"></i></span>
                             <span class="logo-text">VašePodjetje</span>
@@ -230,15 +241,18 @@
                 </div>
                 <div class="footer-col">
                     <h4>Kontakt</h4>
-                    <div class="footer-contact-item">📍 Ljubljana, Slovenija</div>
-                    <div class="footer-contact-item">📞 +386 1 234 5678</div>
-                    <div class="footer-contact-item">✉️ info@vasepodjetje.si</div>
-                    <div class="footer-contact-item">🕐 Pon–Pet: 9:00–17:00</div>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> Ljubljana, Slovenija</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+38612345678">+386 1 234 5678</a></p>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:info@vasepodjetje.si">info@vasepodjetje.si</a></p>
+                        <p><i class="fas fa-clock"></i> Pon–Pet: 9:00–17:00</p>
+                    </address>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 VašePodjetje. Vse pravice pridržane. · <a href="#">Zasebnost</a> · <a href="#">Pogoji</a></p>
-                <p>Gostovanje na GitHub Pages 🌐</p>
+                <p>© 2026 VašePodjetje. Vse pravice pridržane.</p>
+                <p><a href="#">Zasebnost</a> · <a href="#">Pogoji</a> · Gostovanje na GitHub Pages 🌐</p>
             </div>
         </div>
     </footer>
