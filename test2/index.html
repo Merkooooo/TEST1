@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER // SOLUTIONS</title>
+
+    <!-- Fonts: Space Mono & Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR NAV -->
+    <nav class="sidebar">
+        <div class="logo">
+            <span class="glitch" data-text="CYBER">CYBER</span>
+            <span class="logo-sub">//DEV</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active"><span class="nav-num">01</span><span
+                        class="nav-text">DOMOV</span></a></li>
+            <li><a href="#services" class="nav-item"><span class="nav-num">02</span><span
+                        class="nav-text">STORITVE</span></a></li>
+            <li><a href="#projects" class="nav-item"><span class="nav-num">03</span><span
+                        class="nav-text">PROJEKTI</span></a></li>
+            <li><a href="#contact" class="nav-item"><span class="nav-num">04</span><span
+                        class="nav-text">KONTAKT</span></a></li>
+        </ul>
+
+        <div class="socials">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="status-indicator">
+            <span class="status-dot"></span>
+            SYSTEM: ONLINE
+        </div>
+    </nav>
+
+    <!-- FLOATING ELEMENTS -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-circle" id="cursor-circle"></div>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay"></div>
+
+    <main class="content-wrapper">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-label">/// EST. 2026_</div>
+                <h1 class="hero-title">
+                    DIGITALNI <br>
+                    <span class="highlight">INŽENIRING</span> <br>
+                    PRIHODNOSTI
+                </h1>
+                <p class="hero-desc">
+                    Ustvarjamo spletne izkušnje zunaj okvirjev.
+                    Brez kompromisov. Samo čista koda in surov dizajn.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="cyber-btn primary-btn">
+                        <span class="btn-content">Razišči Projekte_</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                    <a href="#contact" class="cyber-btn secondary-btn">
+                        <span class="btn-content">Kontaktiraj Nas_</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-graphic">
+                <div class="cyber-cube">
+                    <div class="cube-face front">HTML</div>
+                    <div class="cube-face back">CSS</div>
+                    <div class="cube-face right">JS</div>
+                    <div class="cube-face left">REACT</div>
+                    <div class="cube-face top">API</div>
+                    <div class="cube-face bottom">SQL</div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- MARQUEE BANNER -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>WEB DEVELOPMENT</span> <span class="separator">+</span>
+                <span>MOBILE APPS</span> <span class="separator">+</span>
+                <span>UI/UX DESIGN</span> <span class="separator">+</span>
+                <span>CLOUD SYSTEMS</span> <span class="separator">+</span>
+                <span>AI INTEGRATION</span> <span class="separator">+</span>
+                <span>CYBER SECURITY</span> <span class="separator">+</span>
+                <span>WEB DEVELOPMENT</span> <span class="separator">+</span>
+                <span>MOBILE APPS</span> <span class="separator">+</span>
+            </div>
+        </div>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section services-section">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">NAŠE STORITVE</h2>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card card-large">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Izdelava naprednih spletnih aplikacij in strani, ki dominirajo na trgu.</p>
+                    <ul class="tech-list">
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="bento-card">
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native in Cross-platform mobilne rešitve za iOS in Android.</p>
+                </div>
+
+                <div class="bento-card">
+                    <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Futuristični vmesniki z odlično uporabniško izkušnjo.</p>
+                </div>
+
+                <div class="bento-card card-wide">
+                    <div class="card-content-row">
+                        <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                        <div>
+                            <h3>Optimizacija & SEO</h3>
+                            <p>Poskrbimo, da vas najdejo. Hitrost in rangiranje na prvem mestu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">IZBRANI PROJEKTI</h2>
+            </div>
+
+            <div class="status-bar-container">
+                <div class="status-bar-item active" data-filter="all">VSI_</div>
+                <div class="status-bar-item" data-filter="web">SPLET_</div>
+                <div class="status-bar-item" data-filter="app">APLIKACIJE_</div>
+            </div>
+
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-row" data-category="web">
+                    <div class="project-info">
+                        <span class="proj-cat">E-COMMERCE // 2025</span>
+                        <h3 class="proj-title">NEON MARKET</h3>
+                    </div>
+                    <div class="project-reveal-img">
+                        <!-- Placeholder for hover image -->
+                        <div class="proj-placeholder" style="background: linear-gradient(45deg, #111, #222);">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="proj-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-row" data-category="app">
+                    <div class="project-info">
+                        <span class="proj-cat">FINTECH APP // 2024</span>
+                        <h3 class="proj-title">CRYPTO VAULT</h3>
+                    </div>
+                    <div class="project-reveal-img">
+                        <div class="proj-placeholder" style="background: linear-gradient(45deg, #050505, #1a1a1a);">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="proj-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-row" data-category="web">
+                    <div class="project-info">
+                        <span class="proj-cat">CORPORATE // 2025</span>
+                        <h3 class="proj-title">AERO DYNAMICS</h3>
+                    </div>
+                    <div class="project-reveal-img">
+                        <div class="proj-placeholder" style="background: linear-gradient(45deg, #000, #111);">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="proj-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-wrapper">
+                <div class="contact-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">user@server:~/contact-form</div>
+                    </div>
+
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span> init_contact_protocol.exe
+                        </div>
+                        <div class="terminal-line">
+                            <span class="system-msg">Loading interface... Done.</span>
+                        </div>
+
+                        <form class="cyber-form">
+                            <div class="form-row">
+                                <label for="name">ENTER_NAME:</label>
+                                <input type="text" id="name" placeholder="_" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="email">ENTER_EMAIL:</label>
+                                <input type="email" id="email" placeholder="_" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="message">ENTER_MESSAGE:</label>
+                                <textarea id="message" rows="4" placeholder="_" required></textarea>
+                            </div>
+
+                            <button type="submit" class="cyber-submit">
+                                &gt; EXECUTE_SEND <span class="cursor-blink">_</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>POVEŽIMO SE</h3>
+                    <p>Začnimo dialog. Brez birokracije, samo direkten dostop do rešitev.</p>
+
+                    <ul class="info-list">
+                        <li><i class="fas fa-envelope"></i> info@vasepodjetje.si</li>
+                        <li><i class="fas fa-phone"></i> +386 1 234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ljubljana, Slovenija</li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="cyber-footer">
+                <div class="footer-line"></div>
+                <div class="footer-content">
+                    <span>&copy; 2026 CYBER//SOLUTIONS. ALL RIGHTS RESERVED.</span>
+                    <a href="#home">BACK_TO_TOP</a>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
