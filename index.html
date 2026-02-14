@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vodilno slovensko podjetje za digitalne rešitve — spletne aplikacije, mobilne aplikacije, UI/UX dizajn">
+    <title>VašePodjetje — Digitalne Rešitve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="page-transition"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">VašePodjetje</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Domov</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="services.html">Storitve</a></li>
+                <li><a href="projects.html">Projekti</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">Brezplačen posvet</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Meni">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        Inovativne Digitalne Rešitve
+                    </div>
+                    <h1 class="hero-title">
+                        Pretvorimo vaše<br>
+                        <span class="gradient-text">vizije</span><br>
+                        v resničnost
+                    </h1>
+                    <p class="hero-subtitle">
+                        Smo vodilno slovensko podjetje za razvoj spletnih aplikacij,
+                        mobilnih rešitev in digitalnih produktov. Pomagamo podjetjem
+                        rasti v digitalnem svetu.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">
+                            Začnimo skupaj <span class="btn-icon">→</span>
+                        </a>
+                        <a href="projects.html" class="btn btn-outline btn-large">
+                            Oglejte si projekte
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">150+</div>
+                            <div class="hero-stat-label">Strank</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">300+</div>
+                            <div class="hero-stat-label">Projektov</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">10+</div>
+                            <div class="hero-stat-label">Let izkušenj</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card-stack">
+                        <div class="hcard hcard-main">
+                            <div>
+                                <div class="hcard-label">Rast prometa</div>
+                                <div class="hcard-value">+347%</div>
+                                <div class="hcard-metric">↑ v zadnjih 12 mesecih</div>
+                            </div>
+                            <div class="hcard-chart">
+                                <div class="hbar"></div>
+                                <div class="hbar"></div>
+                                <div class="hbar"></div>
+                                <div class="hbar"></div>
+                                <div class="hbar"></div>
+                                <div class="hbar"></div>
+                                <div class="hbar"></div>
+                            </div>
+                        </div>
+                        <div class="hcard hcard-float-1">
+                            <div class="hcard-projects">
+                                <div class="hproject-row">
+                                    <span class="hproject-dot dot-cyan"></span>
+                                    <span class="hproject-name">E-commerce</span>
+                                    <span class="hproject-status">Live</span>
+                                </div>
+                                <div class="hproject-row">
+                                    <span class="hproject-dot dot-violet"></span>
+                                    <span class="hproject-name">FitLife App</span>
+                                    <span class="hproject-status status-progress">Dev</span>
+                                </div>
+                                <div class="hproject-row">
+                                    <span class="hproject-dot dot-gold"></span>
+                                    <span class="hproject-name">ERP Sistem</span>
+                                    <span class="hproject-status status-review">Review</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hcard hcard-float-2">
+                            <div class="hcard-label">Zadovoljstvo strank</div>
+                            <div class="hcard-value">98.4%</div>
+                            <div class="hcard-metric">⭐ 5.0 povprečna ocena</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted">
+        <div class="container">
+            <div class="trusted-inner">
+                <span class="trusted-label">Zaupajo nam</span>
+                <div class="trusted-logos">
+                    <span class="trusted-logo">TechStart</span>
+                    <span class="trusted-logo">ModnaHiša</span>
+                    <span class="trusted-logo">Logistika+</span>
+                    <span class="trusted-logo">GreenEnergy</span>
+                    <span class="trusted-logo">DataCore</span>
+                    <span class="trusted-logo">FinTech SI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="badge">Naše storitve</span>
+                <h2>Celovite digitalne<br>rešitve za vaše podjetje</h2>
+                <p>Od ideje do lansiranja — pokrijemo vsak korak digitalne transformacije</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon-wrap">🌐</div>
+                    <h3>Spletne aplikacije</h3>
+                    <p>Moderne, skalabilne spletne aplikacije z vrhunsko uporabniško izkušnjo in blesketajočim
+                        performansom.</p>
+                    <a href="services.html#web" class="service-link">Izvedite več <span>→</span></a>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon-wrap">📱</div>
+                    <h3>Mobilne aplikacije</h3>
+                    <p>Native in cross-platform mobilne aplikacije za iOS in Android, ki delujejo brezhibno in hitro.
+                    </p>
+                    <a href="services.html#mobile" class="service-link">Izvedite več <span>→</span></a>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon-wrap">🎨</div>
+                    <h3>UI/UX Oblikovanje</h3>
+                    <p>Privlačen in funkcionalen dizajn, ki navdušuje uporabnike in povečuje konverzije.</p>
+                    <a href="services.html#design" class="service-link">Izvedite več <span>→</span></a>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon-wrap">☁️</div>
+                    <h3>Cloud rešitve</h3>
+                    <p>Varno in skalabilno gostovanje vaših aplikacij z 99.9% uptime garancijo.</p>
+                    <a href="services.html#cloud" class="service-link">Izvedite več <span>→</span></a>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon-wrap">🤖</div>
+                    <h3>AI & Avtomatizacija</h3>
+                    <p>Inteligentne rešitve za avtomatizacijo poslovnih procesov, ki varčujejo čas in denar.</p>
+                    <a href="services.html#ai" class="service-link">Izvedite več <span>→</span></a>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon-wrap">🔒</div>
+                    <h3>Kibernetska varnost</h3>
+                    <p>Zaščitite svoje poslovanje z naprednimi varnostnimi rešitvami in revizijami.</p>
+                    <a href="services.html#security" class="service-link">Izvedite več <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <div class="why-us-inner">
+                <div class="why-us-text reveal">
+                    <span class="badge badge-violet">Zakaj mi?</span>
+                    <h2>Vaš partner za digitalno transformacijo</h2>
+                    <p>S kombinacijo tehnične odličnosti, kreativnosti in poslovnega razumevanja vam pomagamo doseči in
+                        preseči vaše cilje.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Izkušena ekipa</h4>
+                                <p>30+ certificiranih strokovnjakov z več kot 10 leti izkušenj</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Preverjene tehnologije</h4>
+                                <p>Gradimo na najsodobnejšem in najzanesljivejšem stacku</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Podpora 24/7</h4>
+                                <p>Vedno vam stojimo ob strani — pred, med in po projektu</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <h4>Konkurenčne cene</h4>
+                                <p>Vrhunska kakovost po dostopnih cenah, brez presenečenj</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Spoznajte nas <span class="btn-icon">→</span></a>
+                </div>
+                <div class="why-us-visual reveal reveal-delay-2">
+                    <div class="visual-main-card">
+                        <div>
+                            <div class="vcard-title">Pregled uspešnosti</div>
+                            <div class="vcard-sub">Zadnjih 30 dni</div>
+                        </div>
+                        <div class="vcard-stats-grid">
+                            <div class="vcard-stat">
+                                <div class="vcard-num">+52%</div>
+                                <div class="vcard-lbl">Rast prometa</div>
+                            </div>
+                            <div class="vcard-stat">
+                                <div class="vcard-num">98%</div>
+                                <div class="vcard-lbl">Uptime</div>
+                            </div>
+                            <div class="vcard-stat">
+                                <div class="vcard-num">0.8s</div>
+                                <div class="vcard-lbl">Čas nalaganja</div>
+                            </div>
+                            <div class="vcard-stat">
+                                <div class="vcard-num">4.9★</div>
+                                <div class="vcard-lbl">Ocena strank</div>
+                            </div>
+                        </div>
+                        <div class="vcard-progress">
+                            <div class="vcard-progress-row"><span>Zadovoljstvo</span><span>96%</span></div>
+                            <div class="prog-bar">
+                                <div class="prog-fill" style="width:0%" data-width="96%"></div>
+                            </div>
+                            <div class="vcard-progress-row"><span>Pravočasnost</span><span>92%</span></div>
+                            <div class="prog-bar">
+                                <div class="prog-fill gold" style="width:0%" data-width="92%"></div>
+                            </div>
+                            <div class="vcard-progress-row"><span>Kakovost kode</span><span>98%</span></div>
+                            <div class="prog-bar">
+                                <div class="prog-fill emerald" style="width:0%" data-width="98%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-preview">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="badge badge-gold">Naši projekti</span>
+                <h2>Nedavni uspešni<br>projekti</h2>
+                <p>Oglejte si izbor naših najnovejših del in referenc</p>
+            </div>
+            <div class="projects-grid-home">
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-thumb">🛒</div>
+                    <div class="project-body">
+                        <div class="project-cat">Spletna aplikacija</div>
+                        <h3>E-trgovina ModnaHiša</h3>
+                        <p>Celostna e-commerce platforma z integracijo plačil in naprednimi analitičnimi orodji.</p>
+                        <div class="tag-row">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-thumb">💪</div>
+                    <div class="project-body">
+                        <div class="project-cat">Mobilna aplikacija</div>
+                        <h3>FitLife App</h3>
+                        <p>Cross-platform fitnes aplikacija z AI asistentom in personaliziranimi treningi.</p>
+                        <div class="tag-row">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-thumb">🏭</div>
+                    <div class="project-body">
+                        <div class="project-cat">Enterprise</div>
+                        <h3>ERP Sistem</h3>
+                        <p>Celostna ERP rešitev za upravljanje proizvodnje, skladišča in kadrov.</p>
+                        <div class="tag-row">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3 reveal">
+                <a href="projects.html" class="btn btn-outline btn-large">Vsi projekti <span
+                        class="btn-icon">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="badge">Reference</span>
+                <h2>Kaj pravijo naše stranke</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="stars">
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                            class="star">★</span><span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Ekipa je presegla vsa naša pričakovanja. Projekt je bil dostavljen
+                        pravočasno in v okviru proračuna. Izjemna izkušnja od začetka do konca!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JN</div>
+                        <div>
+                            <div class="author-name">Janez Novak</div>
+                            <div class="author-role">CEO, TechStart d.o.o.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="stars">
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                            class="star">★</span><span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Profesionalnost in strokovnost na najvišji ravni. Naša nova spletna
+                        aplikacija je povečala naš promet za 300% v prvih treh mesecih."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <div class="author-name">Ana Kovač</div>
+                            <div class="author-role">Direktorica, ModnaHiša</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-3">
+                    <div class="stars">
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                            class="star">★</span><span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Odlična komunikacija in podpora tudi po zaključku projekta. Partnerstvo
+                        z njimi je bila najboljša naložba tega leta."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MH</div>
+                        <div>
+                            <div class="author-name">Marko Horvat</div>
+                            <div class="author-role">IT Manager, Logistika Plus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card reveal">
+                <span class="badge">Začnimo</span>
+                <h2>Pripravljeni na<br><span class="gradient-text">digitalno transformacijo?</span></h2>
+                <p>Stopite v stik z nami in skupaj ustvarimo digitalni produkt, ki bo vaše podjetje popeljal naprej.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Kontaktirajte nas <span
+                            class="btn-icon">→</span></a>
+                    <a href="services.html" class="btn btn-outline btn-large">Pregled storitev</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo-wrap">
+                        <a href="index.html" class="logo">
+                            <span class="logo-icon">⚡</span>
+                            <span class="logo-text">VašePodjetje</span>
+                        </a>
+                    </div>
+                    <p class="footer-about">Vodilno slovensko podjetje za digitalne rešitve. Pretvarjamo ideje v
+                        resničnost od leta 2014.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Podjetje</h4>
+                    <ul>
+                        <li><a href="about.html">O nas</a></li>
+                        <li><a href="services.html">Storitve</a></li>
+                        <li><a href="projects.html">Projekti</a></li>
+                        <li><a href="contact.html">Kariera</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Storitve</h4>
+                    <ul>
+                        <li><a href="services.html#web">Spletne aplikacije</a></li>
+                        <li><a href="services.html#mobile">Mobilne aplikacije</a></li>
+                        <li><a href="services.html#design">UI/UX dizajn</a></li>
+                        <li><a href="services.html#cloud">Cloud rešitve</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <div class="footer-contact-item">📍 Ljubljana, Slovenija</div>
+                    <div class="footer-contact-item">📞 +386 1 234 5678</div>
+                    <div class="footer-contact-item">✉️ info@vasepodjetje.si</div>
+                    <div class="footer-contact-item">🕐 Pon–Pet: 9:00–17:00</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 VašePodjetje. Vse pravice pridržane. · <a href="#">Zasebnost</a> · <a href="#">Pogoji</a></p>
+                <p>Gostovanje na GitHub Pages 🌐</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

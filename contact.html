@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte nas za brezplačno posvetovanje — VašePodjetje">
+    <title>Kontakt — VašePodjetje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="page-transition"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">VašePodjetje</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="services.html">Storitve</a></li>
+                <li><a href="projects.html">Projekti</a></li>
+                <li><a href="contact.html" class="active">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">Brezplačen posvet</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Meni">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="breadcrumb"><a href="index.html">Domov</a> / Kontakt</span>
+            <h1>Stopite v <span class="gradient-text">stik</span> z nami</h1>
+            <p>Pripravljeni smo odgovoriti na vsa vaša vprašanja in skupaj poiskati najboljšo rešitev.</p>
+        </div>
+    </section>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div class="contact-form-card reveal">
+                    <h2>Pošljite nam sporočilo</h2>
+                    <p class="form-intro">Izpolnite obrazec in odgovorili vam bomo v 24 urah.</p>
+
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ime in priimek *</label>
+                                <input type="text" id="name" name="name" placeholder="Janez Novak" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Podjetje</label>
+                                <input type="text" id="company" name="company" placeholder="Vaše podjetje d.o.o.">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-pošta *</label>
+                                <input type="email" id="email" name="email" placeholder="vas@primer.si" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+386 40 123 456">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Tip storitve *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Izberite storitev...</option>
+                                <option value="web">Spletna aplikacija</option>
+                                <option value="mobile">Mobilna aplikacija</option>
+                                <option value="design">UI/UX Dizajn</option>
+                                <option value="cloud">Cloud rešitve</option>
+                                <option value="ai">AI & Avtomatizacija</option>
+                                <option value="security">Kibernetska varnost</option>
+                                <option value="consulting">Svetovanje</option>
+                                <option value="other">Drugo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Predviden proračun</label>
+                            <select id="budget" name="budget">
+                                <option value="">Izberite razpon...</option>
+                                <option value="<5k">Manj kot 5.000 €</option>
+                                <option value="5-10k">5.000 € – 10.000 €</option>
+                                <option value="10-25k">10.000 € – 25.000 €</option>
+                                <option value="25-50k">25.000 € – 50.000 €</option>
+                                <option value=">50k">Več kot 50.000 €</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Sporočilo *</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Opišite vaš projekt ali potrebo..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="gdpr" name="gdpr" required>
+                            <label for="gdpr">Strinjam se s <a href="#">politiko zasebnosti</a> in <a href="#">pogoji
+                                    uporabe</a> *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            Pošlji sporočilo <span class="btn-icon">→</span>
+                        </button>
+
+                        <p class="form-note">* Obvezna polja · Odgovorili vam bomo v 24 urah</p>
+                    </form>
+
+                    <div class="form-success" id="formSuccess" style="display:none;">
+                        <div class="success-icon">✅</div>
+                        <h3>Sporočilo uspešno poslano!</h3>
+                        <p>Hvala za vaše sporočilo. Odgovorili vam bomo v najkrajšem možnem času.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card reveal reveal-delay-2">
+                    <h3>Kontaktne informacije</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-content">
+                                <h4>Naslov</h4>
+                                <p>Slovenska cesta 100<br>1000 Ljubljana<br>Slovenija</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+38612345678">+386 1 234 5678</a><br>
+                                    <a href="tel:+38640123456">+386 40 123 456</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>E-pošta</h4>
+                                <p><a href="mailto:info@vasepodjetje.si">info@vasepodjetje.si</a><br>
+                                    <a href="mailto:support@vasepodjetje.si">support@vasepodjetje.si</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">🕐</div>
+                            <div class="method-content">
+                                <h4>Delovni čas</h4>
+                                <p>Ponedeljek – Petek: 9:00 – 17:00<br>Vikend: Zaprto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-highlight">
+                        <h4>💡 Brezplačno svetovanje</h4>
+                        <p>Prvi posvet je brezplačen! Pokličite nas za neobvezujoč pogovor o vašem projektu.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="badge badge-violet">FAQ</span>
+                <h2>Pogosta vprašanja</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-card reveal reveal-delay-1">
+                    <h3>Kako dolgo traja razvoj projekta?</h3>
+                    <p>Odvisno od obsega projekta. Preprosta spletna stran 2–4 tedne, kompleksna aplikacija 2–4 mesece.
+                    </p>
+                </div>
+                <div class="faq-card reveal reveal-delay-2">
+                    <h3>Ali nudite podporo po zaključku projekta?</h3>
+                    <p>Da! Nudimo 6-mesečno brezplačno podporo in vzdrževanje za vse projekte.</p>
+                </div>
+                <div class="faq-card reveal reveal-delay-3">
+                    <h3>Kakšne so vaše cene?</h3>
+                    <p>Vsak projekt je unikaten. Kontaktirajte nas za brezplačno in neobvezujočo ponudbo.</p>
+                </div>
+                <div class="faq-card reveal reveal-delay-4">
+                    <h3>Ali delate z malimi podjetji?</h3>
+                    <p>Seveda! Delamo s podjetji vseh velikosti, od startupov do velikih korporacij.</p>
+                </div>
+                <div class="faq-card reveal reveal-delay-1">
+                    <h3>Katere tehnologije uporabljate?</h3>
+                    <p>React, Vue.js, Next.js, Node.js, React Native, Flutter, Python in mnoge druge sodobne
+                        tehnologije.</p>
+                </div>
+                <div class="faq-card reveal reveal-delay-2">
+                    <h3>Kako potekata komunikacija in projektno vodenje?</h3>
+                    <p>Redni tedenski klici, Slack za komunikacijo in Jira za sledenje napredku — preglednost na vsakem
+                        koraku.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo-wrap">
+                        <a href="index.html" class="logo">
+                            <span class="logo-icon">⚡</span>
+                            <span class="logo-text">VašePodjetje</span>
+                        </a>
+                    </div>
+                    <p class="footer-about">Vodilno slovensko podjetje za digitalne rešitve. Pretvarjamo ideje v
+                        resničnost od leta 2014.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Podjetje</h4>
+                    <ul>
+                        <li><a href="about.html">O nas</a></li>
+                        <li><a href="services.html">Storitve</a></li>
+                        <li><a href="projects.html">Projekti</a></li>
+                        <li><a href="contact.html">Kariera</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Storitve</h4>
+                    <ul>
+                        <li><a href="services.html#web">Spletne aplikacije</a></li>
+                        <li><a href="services.html#mobile">Mobilne aplikacije</a></li>
+                        <li><a href="services.html#design">UI/UX dizajn</a></li>
+                        <li><a href="services.html#cloud">Cloud rešitve</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <div class="footer-contact-item">📍 Ljubljana, Slovenija</div>
+                    <div class="footer-contact-item">📞 +386 1 234 5678</div>
+                    <div class="footer-contact-item">✉️ info@vasepodjetje.si</div>
+                    <div class="footer-contact-item">🕐 Pon–Pet: 9:00–17:00</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 VašePodjetje. Vse pravice pridržane. · <a href="#">Zasebnost</a> · <a href="#">Pogoji</a></p>
+                <p>Gostovanje na GitHub Pages 🌐</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

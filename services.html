@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naše digitalne storitve — spletne in mobilne aplikacije, UI/UX dizajn, cloud">
+    <title>Storitve — VašePodjetje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="page-transition"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">VašePodjetje</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="services.html" class="active">Storitve</a></li>
+                <li><a href="projects.html">Projekti</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">Brezplačen posvet</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Meni">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="breadcrumb"><a href="index.html">Domov</a> / Storitve</span>
+            <h1>Naše <span class="gradient-text">storitve</span></h1>
+            <p>Celovite digitalne rešitve, prilagojene vašim poslovnim potrebam in ambicijam.</p>
+        </div>
+    </section>
+
+    <section class="services-detail">
+        <div class="container">
+
+            <div class="service-detail-section reveal" id="web">
+                <div class="service-detail-text">
+                    <span class="badge">Web Development</span>
+                    <h2>🌐 Spletne aplikacije</h2>
+                    <p class="lead">Razvijamo moderne, skalabilne spletne aplikacije z uporabo najsodobnejših tehnologij
+                        in najboljših praks.</p>
+                    <h3>Tehnologije</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <h3>Kaj dobite?</h3>
+                    <ul class="feature-check-list">
+                        <li>Odziven dizajn za vse naprave</li>
+                        <li>Optimizirana hitrost nalaganja (&lt;1s)</li>
+                        <li>SEO optimizacija in analitika</li>
+                        <li>Varnostne najboljše prakse</li>
+                        <li>6 mesecev brezplačne podpore</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Zahtevaj ponudbo <span class="btn-icon">→</span></a>
+                </div>
+                <div class="service-visual">
+                    <div class="service-visual-icon">💻</div>
+                </div>
+            </div>
+
+            <div class="service-detail-section reverse reveal" id="mobile">
+                <div class="service-detail-text">
+                    <span class="badge badge-violet">Mobile Development</span>
+                    <h2>📱 Mobilne aplikacije</h2>
+                    <p class="lead">Native in cross-platform mobilne aplikacije za iOS in Android, ki delujejo brezhibno
+                        in hitro.</p>
+                    <h3>Tehnologije</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <h3>Kaj dobite?</h3>
+                    <ul class="feature-check-list">
+                        <li>Native performanse na iOS in Android</li>
+                        <li>Offline funkcionalnost</li>
+                        <li>Push notifikacije in deep linking</li>
+                        <li>App Store & Google Play optimizacija</li>
+                        <li>Redne posodobitve in vzdrževanje</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Zahtevaj ponudbo <span class="btn-icon">→</span></a>
+                </div>
+                <div class="service-visual">
+                    <div class="service-visual-icon">📲</div>
+                </div>
+            </div>
+
+            <div class="service-detail-section reveal" id="design">
+                <div class="service-detail-text">
+                    <span class="badge badge-gold">Design</span>
+                    <h2>🎨 UI/UX Oblikovanje</h2>
+                    <p class="lead">Ustvarjamo privlačne in intuitivne uporabniške vmesnike, ki navdušujejo uporabnike
+                        in dvigujejo konverzije.</p>
+                    <h3>Naše storitve</h3>
+                    <ul class="feature-check-list">
+                        <li>Raziskave uporabnikov in UX audit</li>
+                        <li>Wireframing in interaktivni prototipi</li>
+                        <li>Visual design in design sistemi</li>
+                        <li>Brand identity in grafično oblikovanje</li>
+                        <li>Usability testiranje in optimizacija</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Zahtevaj ponudbo <span class="btn-icon">→</span></a>
+                </div>
+                <div class="service-visual">
+                    <div class="service-visual-icon">🖌️</div>
+                </div>
+            </div>
+
+            <div class="service-detail-section reverse reveal" id="cloud">
+                <div class="service-detail-text">
+                    <span class="badge">Infrastructure</span>
+                    <h2>☁️ Cloud rešitve</h2>
+                    <p class="lead">Varno in skalabilno gostovanje vaših aplikacij v oblaku z najsodobnejšo
+                        infrastrukturo.</p>
+                    <h3>Platforme</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">Google Cloud</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                    <h3>Kaj dobite?</h3>
+                    <ul class="feature-check-list">
+                        <li>99.9% uptime garancija</li>
+                        <li>Avtomatsko skaliranje ob obremenitvah</li>
+                        <li>Dnevni backup in disaster recovery</li>
+                        <li>24/7 monitoring in alarmiranje</li>
+                        <li>SSL certifikati in DDoS zaščita</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Zahtevaj ponudbo <span class="btn-icon">→</span></a>
+                </div>
+                <div class="service-visual">
+                    <div class="service-visual-icon">⛅</div>
+                </div>
+            </div>
+
+            <div class="service-detail-section reveal" id="ai">
+                <div class="service-detail-text">
+                    <span class="badge badge-violet">AI & Automation</span>
+                    <h2>🤖 AI & Avtomatizacija</h2>
+                    <p class="lead">Inteligentne rešitve, ki avtomatizirajo ponavljajoče procese in odkrivajo skrite
+                        priložnosti v vaših podatkih.</p>
+                    <h3>Kaj dobite?</h3>
+                    <ul class="feature-check-list">
+                        <li>Strojno učenje po meri</li>
+                        <li>Chatboti in virtualni asistenti</li>
+                        <li>Napredna analitika in napovedovanje</li>
+                        <li>Avtomatizacija delovnih tokov (RPA)</li>
+                        <li>Integracija z obstoječimi sistemi</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Zahtevaj ponudbo <span class="btn-icon">→</span></a>
+                </div>
+                <div class="service-visual">
+                    <div class="service-visual-icon">🧠</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card reveal">
+                <span class="badge">Začnimo</span>
+                <h2>Pripravljeni začeti<br><span class="gradient-text">vaš projekt?</span></h2>
+                <p>Kontaktirajte nas za brezplačno posvetovanje in prilagojeno ponudbo.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Kontaktirajte nas <span
+                            class="btn-icon">→</span></a>
+                    <a href="projects.html" class="btn btn-outline btn-large">Oglejte si projekte</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo-wrap">
+                        <a href="index.html" class="logo">
+                            <span class="logo-icon">⚡</span>
+                            <span class="logo-text">VašePodjetje</span>
+                        </a>
+                    </div>
+                    <p class="footer-about">Vodilno slovensko podjetje za digitalne rešitve. Pretvarjamo ideje v
+                        resničnost od leta 2014.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Podjetje</h4>
+                    <ul>
+                        <li><a href="about.html">O nas</a></li>
+                        <li><a href="services.html">Storitve</a></li>
+                        <li><a href="projects.html">Projekti</a></li>
+                        <li><a href="contact.html">Kariera</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Storitve</h4>
+                    <ul>
+                        <li><a href="services.html#web">Spletne aplikacije</a></li>
+                        <li><a href="services.html#mobile">Mobilne aplikacije</a></li>
+                        <li><a href="services.html#design">UI/UX dizajn</a></li>
+                        <li><a href="services.html#cloud">Cloud rešitve</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <div class="footer-contact-item">📍 Ljubljana, Slovenija</div>
+                    <div class="footer-contact-item">📞 +386 1 234 5678</div>
+                    <div class="footer-contact-item">✉️ info@vasepodjetje.si</div>
+                    <div class="footer-contact-item">🕐 Pon–Pet: 9:00–17:00</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 VašePodjetje. Vse pravice pridržane. · <a href="#">Zasebnost</a> · <a href="#">Pogoji</a></p>
+                <p>Gostovanje na GitHub Pages 🌐</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
