@@ -1600,7 +1600,24 @@ input[type="checkbox"] {
     font-size: 0.9rem;
 }
 
-/* Responsive Fixes within CSS */
+/* ----- 21. Global Background Pattern ----- */
+.global-bg-pattern {
+    position: fixed;
+    /* Fixed to viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(11, 197, 234, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 80% 70%, rgba(130, 87, 230, 0.1) 0%, transparent 25%),
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.02) 2px, transparent 2px, transparent 8px);
+    pointer-events: none;
+    z-index: -1;
+    /* Behind everything */
+    animation: patternFloat 20s ease-in-out infinite;
+}
+
 @media (max-width: 1024px) {
 
     .faq-grid,
