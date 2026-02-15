@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Preberite si koristne nasvete, vodnike in novice o prezračevanju z rekuperacijo. Vse o zdravju, udobju in energetski učinkovitosti.">
+    <title>Prispevki o prezračevanju — HANSEN</title>
+
+    <!-- Google Fonts - Syne & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Page Transition Overlay -->
+    <div id="page-transition"></div>
+
+    <!-- Global Background -->
+    <div class="global-bg-pattern"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-wind"></i></span>
+                <span class="logo-text">HANSEN</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="rekuperacija.html">Sistemi</a></li>
+                <li><a href="prispevki.html" class="active">Prispevki</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">Brezplačen posvet</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Meni">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Inner Hero Section -->
+        <section class="inner-hero">
+            <div class="container">
+                <span class="hero-tagline">Znanje in nasveti</span>
+                <h1 class="hero-title">Prispevki o <span class="gradient-text">prezračevanju</span></h1>
+                <p class="hero-description">
+                    Odkrijte najnovejše trende, zdravstvene prednosti in tehnične vodnike za optimalno kakovost bivanja
+                    v vašem domu.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Search & Filter Section -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-controls sticky-filter">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="blogSearch" placeholder="Išči po prispevkih...">
+                    </div>
+                    <div class="filter-bar no-margin">
+                        <button class="filter-btn active" data-category="all">Vsi</button>
+                        <button class="filter-btn" data-category="nasveti">Nasveti</button>
+                        <button class="filter-btn" data-category="zdravje">Zdravje</button>
+                        <button class="filter-btn" data-category="tehnologija">Tehnologija</button>
+                    </div>
+                </div>
+
+                <div class="blog-grid" id="blogGrid">
+                    <!-- Article 1 -->
+                    <article class="blog-card reveal" data-category="nasveti">
+                        <div class="blog-image">
+                            <i class="fas fa-euro-sign blog-placeholder-icon"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">15. Feb 2024</span>
+                                <span class="blog-read-time">5 min branja</span>
+                            </div>
+                            <h3>Lokalni rekuperator cena za učinkovito prezračevanje</h3>
+                            <p>Preverite, zakaj je naložba v kakovosten rekuperator dolgoročno najboljša izbira za vašo
+                                denarnico in zdravje.</p>
+                            <a href="#" class="read-more">Preberi več <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card reveal" data-category="zdravje">
+                        <div class="blog-image">
+                            <i class="fas fa-heartbeat blog-placeholder-icon"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">10. Feb 2024</span>
+                                <span class="blog-read-time">4 min branja</span>
+                            </div>
+                            <h3>Prezračevalni sistem je naložba v zdravje in udobje</h3>
+                            <p>Kako svež zrak vpliva na vaš spanec, koncentracijo in splošno počutje v bivalnih
+                                prostorih.</p>
+                            <a href="#" class="read-more">Preberi več <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card reveal" data-category="tehnologija">
+                        <div class="blog-image">
+                            <i class="fas fa-microchip blog-placeholder-icon"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">05. Feb 2024</span>
+                                <span class="blog-read-time">6 min branja</span>
+                            </div>
+                            <h3>Rekuperator lokalni: kombinacija udobja in varčnosti</h3>
+                            <p>Spoznajte tehnologijo, ki omogoča vračanje toplote in zmanjšanje stroškov ogrevanja do
+                                30%.</p>
+                            <a href="#" class="read-more">Preberi več <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card reveal" data-category="nasveti">
+                        <div class="blog-image">
+                            <i class="fas fa-exclamation-triangle blog-placeholder-icon"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">01. Feb 2024</span>
+                                <span class="blog-read-time">4 min branja</span>
+                            </div>
+                            <h3>Najcenejši prezračevalni sistem ni vedno dobra izbira</h3>
+                            <p>Na kaj morate biti pozorni pri nakupu, da se izognete hrupu in neučinkovitosti poceni
+                                naprav.</p>
+                            <a href="#" class="read-more">Preberi več <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card reveal" data-category="zdravje">
+                        <div class="blog-image">
+                            <i class="fas fa-droplet blog-placeholder-icon"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">28. Jan 2024</span>
+                                <span class="blog-read-time">5 min branja</span>
+                            </div>
+                            <h3>Vlaga v stanovanju in kako jo trajno odpraviti</h3>
+                            <p>Plesen in vlaga sta preteklost s pravilno načrtovanim prezračevanjem. Preberite naš
+                                vodnik.</p>
+                            <a href="#" class="read-more">Preberi več <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card reveal" data-category="zdravje">
+                        <div class="blog-image">
+                            <i class="fas fa-radiation blog-placeholder-icon"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">20. Jan 2024</span>
+                                <span class="blog-read-time">7 min branja</span>
+                            </div>
+                            <h3>Nevarnosti Radona: Kako zmanjšati tveganje</h3>
+                            <p>Radon je nevaren plin brez vonja. Spoznajte, kako ga rekuperacija učinkovito odstranjuje
+                                iz hiše.</p>
+                            <a href="#" class="read-more">Preberi več <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container reveal">
+                <div class="newsletter-card">
+                    <h2>Ne zamudite novejših nasvetov</h2>
+                    <p>Prijavite se na naše e-novice in bodite obveščeni o novostih in ugodnostih.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Vaš e-poštni naslov" required>
+                        <button type="submit" class="btn btn-primary">Prijava</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-wind"></i></span>
+                        <span class="logo-text">HANSEN</span>
+                    </a>
+                    <p>Vrhunski prezračevalni sistemi za vaš dom. Z vami že več kot 20 let.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Povezave</h4>
+                    <ul>
+                        <li><a href="index.html">Domov</a></li>
+                        <li><a href="about.html">O nas</a></li>
+                        <li><a href="rekuperacija.html">Sistemi</a></li>
+                        <li><a href="prispevki.html">Prispevki</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:0801105">080 11 05</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:tersus@siol.net">tersus@siol.net</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ulica Ivana Selana 15, 1351 Brezovica</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HANSEN (TERSUS d.o.o.). Vse pravice pridržane.</p>
+                <ul class="footer-legal">
+                    <li><a href="politika-zasebnosti.html">Politika zasebnosti</a></li>
+                    <li><a href="#">Piškotki</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

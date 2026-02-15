@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vrhunski prezračevalni sistemi HANSEN z rekuperacijo toplote. Zagotovite si svež in čist zrak v vašem domu z minimalnimi toplotnimi izgubami.">
+    <title>Sistemi z rekuperacijo — HANSEN</title>
+
+    <!-- Google Fonts - Syne & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Page Transition Overlay -->
+    <div id="page-transition"></div>
+
+    <!-- Global Background -->
+    <div class="global-bg-pattern"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-wind"></i></span>
+                <span class="logo-text">HANSEN</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="rekuperacija.html" class="active">Sistemi</a></li>
+                <li><a href="prispevki.html">Prispevki</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">Brezplačen posvet</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Meni">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Inner Hero Section -->
+        <section class="inner-hero">
+            <div class="container">
+                <span class="hero-tagline">Tehnologija prihodnosti</span>
+                <h1 class="hero-title">Sistemi z <span class="gradient-text">rekuperacijo</span></h1>
+                <p class="hero-description">
+                    Naši sistemi zagotavljajo nenehno kroženje svežega zraka, odstranjujejo vlago in neprijetne vonjave
+                    ter hkrati ohranjajo do 94% toplote v prostoru.
+                </p>
+            </div>
+        </section>
+
+        <!-- Product Filter Section -->
+        <section class="products-section">
+            <div class="container">
+                <div class="filter-bar sticky-filter">
+                    <button class="filter-btn active" data-filter="all">Vsi sistemi</button>
+                    <button class="filter-btn" data-filter="pro">HANSEN PRO</button>
+                    <button class="filter-btn" data-filter="eco">HANSEN ECO</button>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                    <!-- HANSEN PRO 160 Wireless -->
+                    <div class="product-card reveal" data-category="pro">
+                        <div class="product-badge">PRO</div>
+                        <div class="product-image">
+                            <i class="fas fa-box-open product-placeholder-icon"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>HANSEN PRO 160 Wireless</h3>
+                            <p>Prezračevalni sistem s 94% izkoristkom, brezžično povezavo med enotami in izjemno tihim
+                                delovanjem.</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> 94% toplotni izkoristek</li>
+                                <li><i class="fas fa-check"></i> Brezžična sinhronizacija</li>
+                                <li><i class="fas fa-check"></i> Senzor vlage</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-sm btn-outline">Povpraševanje</a>
+                        </div>
+                    </div>
+
+                    <!-- HANSEN PRO 160 Active -->
+                    <div class="product-card reveal" data-category="pro">
+                        <div class="product-badge">PRO</div>
+                        <div class="product-image">
+                            <i class="fas fa-box-open product-placeholder-icon"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>HANSEN PRO 160 Active</h3>
+                            <p>Rekuperator z žično povezavo med enotami, primeren za novogradnje in temeljite prenove.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Žična stabilnost</li>
+                                <li><i class="fas fa-check"></i> Visok pretok zraka</li>
+                                <li><i class="fas fa-check"></i> Integrirano krmiljenje</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-sm btn-outline">Povpraševanje</a>
+                        </div>
+                    </div>
+
+                    <!-- HANSEN PRO 100 Wireless -->
+                    <div class="product-card reveal" data-category="pro">
+                        <div class="product-badge">PRO</div>
+                        <div class="product-image">
+                            <i class="fas fa-box-open product-placeholder-icon"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>HANSEN PRO 100 Wireless</h3>
+                            <p>Kompaktna rešitev za manjše bivalne prostore in kopalnice z vso napredno PRO tehnologijo.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Kompaktna oblika</li>
+                                <li><i class="fas fa-check"></i> Visok izkoristek</li>
+                                <li><i class="fas fa-check"></i> Enostavna vgradnja</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-sm btn-outline">Povpraševanje</a>
+                        </div>
+                    </div>
+
+                    <!-- HANSEN Eco 150 Wireless -->
+                    <div class="product-card reveal" data-category="eco">
+                        <div class="product-badge badge-eco">ECO</div>
+                        <div class="product-image">
+                            <i class="fas fa-box-open product-placeholder-icon"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>HANSEN Eco 150 Wireless</h3>
+                            <p>Ekonomična rešitev z brezžično povezavo, primerna za optimalno razvlaževanje prostorov.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Regulacija razvlaževanja</li>
+                                <li><i class="fas fa-check"></i> Nizka poraba energije</li>
+                                <li><i class="fas fa-check"></i> Prehod skozi steno 160mm</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-sm btn-outline">Povpraševanje</a>
+                        </div>
+                    </div>
+
+                    <!-- HANSEN Eco 150 Active -->
+                    <div class="product-card reveal" data-category="eco">
+                        <div class="product-badge badge-eco">ECO</div>
+                        <div class="product-image">
+                            <i class="fas fa-box-open product-placeholder-icon"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>HANSEN Eco 150 Active</h3>
+                            <p>Sistem z visokim toplotnim izkoristkom in enostavnim vzdrževanjem za proračunsko prijazno
+                                prezračevanje.</p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Enostavno čiščenje</li>
+                                <li><i class="fas fa-check"></i> Tih nočni način</li>
+                                <li><i class="fas fa-check"></i> Dolga življenjska doba</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-sm btn-outline">Povpraševanje</a>
+                        </div>
+                    </div>
+
+                    <!-- HANSEN Eco 100 -->
+                    <div class="product-card reveal" data-category="eco">
+                        <div class="product-badge badge-eco">ECO</div>
+                        <div class="product-image">
+                            <i class="fas fa-box-open product-placeholder-icon"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>HANSEN Eco 100</h3>
+                            <p>Manjši rekuperacijski sistem, posebej zasnovan za specifične potrebe manjših prostorov.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Mini izvedba</li>
+                                <li><i class="fas fa-check"></i> Stabilno delovanje</li>
+                                <li><i class="fas fa-check"></i> Cenovno dostopno</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-sm btn-outline">Povpraševanje</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container reveal">
+                <div class="cta-card">
+                    <h2>Niste prepričani, kateri sistem je pravi?</h2>
+                    <p>Naši strokovnjaki vam bodo pomagali izbrati optimalno rešitev za vaš dom ali poslovni prostor.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary">Brezplačno svetovanje</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-wind"></i></span>
+                        <span class="logo-text">HANSEN</span>
+                    </a>
+                    <p>Vrhunski prezračevalni sistemi za vaš dom. Z vami že več kot 20 let.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Povezave</h4>
+                    <ul>
+                        <li><a href="index.html">Domov</a></li>
+                        <li><a href="about.html">O nas</a></li>
+                        <li><a href="rekuperacija.html">Sistemi</a></li>
+                        <li><a href="prispevki.html">Prispevki</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:0801105">080 11 05</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:tersus@siol.net">tersus@siol.net</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ulica Ivana Selana 15, 1351 Brezovica</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HANSEN (TERSUS d.o.o.). Vse pravice pridržane.</p>
+                <ul class="footer-legal">
+                    <li><a href="politika-zasebnosti.html">Politika zasebnosti</a></li>
+                    <li><a href="#">Piškotki</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
